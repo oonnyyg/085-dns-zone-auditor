@@ -1,0 +1,12 @@
+{
+  "zone": "example.com.",
+  "records": [
+    {"name": "www.example.com.", "type": "CNAME", "ttl": 300, "data": "cdn.example.net."},
+    {"name": "a.example.com.", "type": "CNAME", "ttl": 300, "data": "b.example.com."},
+    {"name": "b.example.com.", "type": "CNAME", "ttl": 300, "data": "a.example.com."},
+    {"name": "mail.example.com.", "type": "A", "ttl": 60, "data": "192.0.2.5"},
+    {"name": "example.com.", "type": "MX", "ttl": 60, "data": "10 mail.example.com."},
+    {"name": "example.com.", "type": "MX", "ttl": 60, "data": "20 relay.example.org."},
+    {"name": "x.example.com.", "type": "TXT", "ttl": 60, "data": "v=spf1 -all"}
+  ]
+}
